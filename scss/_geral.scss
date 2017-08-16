@@ -1,0 +1,149 @@
+body 
+{
+    background-color: $bgColorPrimary;
+    color: $primaryColor;
+    font-family: $primaryFont;
+    font-size: $fontSizeBase;
+    font-weight: $fontWeightNormal;
+}
+
+img 
+{
+    display: inline-block; 
+    margin-bottom: 0;
+}
+
+a,
+a:hover,
+a:focus 
+{
+    text-decoration: none;
+}
+
+.ss-wrapper 
+{
+    border-radius: $radiusPadrao;
+    box-shadow: $dropShadow;
+    width: 1375px; 
+    max-width: 100%;  
+    margin: 30px auto 0;  
+    overflow: hidden;  
+}
+
+.ss-container 
+{
+    width: $container-md;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px 0;
+
+    @include breakpoint($allCelular)
+    {   
+        text-align: center;  
+    }    
+
+    header 
+    {
+        padding: 40px 0 10px;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+
+        @include breakpoint($allCelular)
+        {   
+            text-align: center;
+        }           
+
+        &::after 
+        {
+            content: "";
+            background-color: $primaryColor;
+            width: 50px;
+            height: 2px;
+            position: absolute;
+            right: 50%;
+            margin-right: -25px;
+            bottom: 0;
+
+            @include breakpoint($allCelular)
+            {   
+                right: 50%;
+                margin-right: -25px;
+            } 
+
+        }
+
+        h2 
+        {
+            font-size: $fontSizeBase * 2.5;
+            line-height: 1.3em;
+            font-weight: $fontWeightNormal;
+            letter-spacing: 5px;
+            margin: 0;
+            padding: 0; 
+            text-transform: uppercase;
+
+            @include breakpoint($allCelular)
+            {   
+                font-size: $fontSizeBase * 2;
+                float: none;
+                max-width: 100%;
+                width: 100%;
+            } 
+
+        }
+    }
+
+}
+
+.btn 
+{
+    border-radius: $radiusPadrao;
+    color: #fff;
+    display: inline-block;
+    font-size: $fontSizeBase * 2.1;
+    font-weight: $fontWeightMedium;
+    line-height: 1em;
+    padding: 12px 50px;
+    letter-spacing: 1px;
+
+    &.btn-conheca 
+    {
+        background: $bgColorBtn;
+        box-shadow: $dropShadowLight;
+        transition: $transitionBg;
+        float: right;
+
+        &:hover,
+        &:focus  
+        {
+            background: $bgColorBtnHover;
+            color: #fff;    
+        }
+
+        @include breakpoint($smallCelular)
+        {   
+            display: block;
+        } 
+
+    }
+
+}
+
+.sessao 
+{
+    position: relative;
+    overflow: hidden;
+
+    &::before 
+    {
+        content: "";
+        background-color: $primaryColor;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 0;       
+        left: 0;
+    }
+
+}

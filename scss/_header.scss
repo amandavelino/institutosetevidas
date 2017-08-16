@@ -1,0 +1,106 @@
+#hd-principal
+{
+    position: relative;
+}
+
+.hd-container 
+{
+    background: url("../imgs/bg-header.jpg") no-repeat center top;
+
+    @include breakpoint($allCelular)
+    {   
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }   
+    
+    .ss-ct-nav
+    {
+        padding: 0;
+    }
+
+    .ss-navbar
+    {
+        background-color: transparent;
+        border: 0 none;
+    }
+
+    .logo-ct .logo-img
+    {
+        padding: 0 ($grid-gutter-width / 2);
+    }
+
+}
+
+.nav-principal
+{
+    width: 75%;
+    float: left;
+    text-align: center;
+    margin-top: 8px;
+
+    li
+    {
+        display: inline-block;
+
+        a 
+        {
+            color: $primaryColor;
+            font-size: $fontSizeBase * 1.6;
+            font-weight: $fontWeightNormal;
+            line-height: $fontSizeBase * 2;
+            padding: $fontSizeBase ($fontSizeBase/2);
+            transition: $transitionAll;
+
+            &:hover,
+            &:focus 
+            {
+                background: transparent;
+                text-transform: uppercase;
+                font-size: $fontSizeBase * 2;
+                font-weight: $fontWeightBold;                
+            }
+        }
+
+        &.active,
+        &:hover
+        {
+            a 
+            {
+                background: transparent;
+                text-transform: uppercase;
+                font-size: $fontSizeBase * 2;
+                font-weight: $fontWeightBold; 
+            }
+        }
+
+    }
+
+}
+
+.ss-navbar
+{
+
+    .icons-hd-ct
+    {
+        margin: ($fontSizeBase + 2) 0 0;
+        background: $bgIconsHeader;
+        border-radius: $radiusPadrao;
+        a 
+        {
+            padding: ($fontSizeBase/2) $grid-gutter-width;
+
+            &:hover,
+            &:focus 
+            {
+                background: $primaryColor;
+            }
+
+            i 
+            {
+                color: $iconsColor;
+                font-size: $fontSizeBase * 1.6;
+            }
+        }
+    }
+
+}

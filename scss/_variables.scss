@@ -1,0 +1,48 @@
+//Background Colors
+$bgColorPrimary: #96ccc7;
+$bgIconsHeader: #cbdad8;
+ 
+//Cores
+$primaryColor: #fff;  
+
+//Icons
+$iconsColor: #777978;
+
+//Fontes  
+
+    $primaryFont: "Montserrat", "Arial Black", Gadget, sans-serif;
+    $secondaryFont: "proxima-nova", Arial, Helvetica, sans-serif;
+    $fontSizeBase: 10px;
+
+    //Weight
+    $fontWeightLight: 300;
+    $fontWeightNormal: 400;
+    $fontWeightMedium: 500;
+    $fontWeightSemiBold: 600;
+    $fontWeightBold: 700;
+
+//Botoes
+$radiusPadrao: 50px; 
+$bgColorBtn: #db5864;
+$bgColorBtnHover: #37a085;
+
+//Efeitos
+$dropShadow: 0px 0px 40px 0px rgba(0,0,0,0.5);
+$dropShadowLight: 2px 2px 5px 0px rgba(0,0,0,0.2);
+$transitionAll: all .15s ease-in-out;
+$transitionBg: background-color .5s ease-in-out;
+
+//Media Queries
+
+    //Desktops
+    $largeDesktop: 1200px; // > 1200px
+    $smallDesktop: 992px 1199px; // entre 1200px e 992px 
+    $allDesktop: 992px; // > 992px
+
+    //Tablets
+    $tablet: 768px 991px; //tablets portrait: 
+
+    //Celular
+    $allCelular: 0 767px; // todos os dispositivos móveis < 768px
+    $largeCelular: 481 767px;
+    $smallCelular: 0 480px; 

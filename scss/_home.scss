@@ -1,0 +1,38 @@
+.ss-somos
+{
+    background: url("../imgs/ss-quem-somos.jpg") no-repeat top center;
+    background-size: cover;
+
+    .ss-conteudo
+    {
+        text-align: right; 
+        margin-bottom: 20px;
+        padding-top: 400px;
+        overflow: hidden;
+
+        @include breakpoint($allCelular)
+        {   
+            text-align: center;
+        } 
+
+        p 
+        {
+            font-size: $fontSizeBase * 2.5;
+            font-weight: $fontWeightBold;
+            float: right;
+            line-height: 1.2em;
+            max-width: 565px;
+
+            @include breakpoint($allCelular)
+            {   
+                font-size: $fontSizeBase * 1.6;
+                float: none;
+                line-height: 1.6em;
+                max-width: 100%;
+            }
+
+        }
+
+    }
+
+}
