@@ -1,10 +1,14 @@
 body 
 {
-    background-color: $bgColorPrimary;
     color: $primaryColor;
     font-family: $primaryFont;
     font-size: $fontSizeBase;
     font-weight: $fontWeightNormal;
+
+    &.pg-home 
+    {
+        background-color: $bgColorPrimary;
+    }
 }
 
 img 
@@ -18,6 +22,11 @@ a:hover,
 a:focus 
 {
     text-decoration: none;
+}
+
+p 
+{
+    font-size: $fontSizeBase * 1.5;
 }
 
 .ss-wrapper 
@@ -35,16 +44,28 @@ a:focus
     width: $container-md;
     margin: 0 auto;
     overflow: hidden;
-    padding: 40px 0;
+    padding: 40px 0 50px;
+    position: relative;
 
     @include breakpoint($allCelular)
     {   
         text-align: center;  
     }    
 
+    &::before 
+    {
+        background: $primaryColor;
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 0;       
+        left: 0;
+    }
+
     header 
     {
-        padding: 40px 0 10px;
+        padding: 0 0 20px;
         text-align: center;
         overflow: hidden;
         position: relative;
@@ -57,13 +78,12 @@ a:focus
         &::after 
         {
             content: "";
-            background-color: $primaryColor;
             width: 50px;
             height: 2px;
             position: absolute;
             right: 50%;
             margin-right: -25px;
-            bottom: 0;
+            bottom: 10px; 
 
             @include breakpoint($allCelular)
             {   
@@ -75,10 +95,10 @@ a:focus
 
         h2 
         {
-            font-size: $fontSizeBase * 2.5;
+            font-size: $fontSizeBase * 2;
             line-height: 1.3em;
             font-weight: $fontWeightNormal;
-            letter-spacing: 5px;
+            letter-spacing: 4px;
             margin: 0;
             padding: 0; 
             text-transform: uppercase;
@@ -102,18 +122,51 @@ a:focus
     color: #fff;
     display: inline-block;
     font-size: $fontSizeBase * 2.1;
-    font-weight: $fontWeightMedium;
+    font-weight: $fontWeightSemiBold;
     line-height: 1em;
     padding: 12px 50px;
     letter-spacing: 1px;
+    transition: $transitionBg;
 
     &.btn-conheca 
     {
         background: $bgColorBtn;
         box-shadow: $dropShadowLight;
-        transition: $transitionBg;
         float: right;
+    }
 
+    &.btn-veja
+    {
+        background: $bgColorBtnMais;
+        font-family: $secondaryFont;
+        font-size: $fontSizeBase * 1.8;
+        font-weight: $fontWeightNormal;
+        line-height: 1.2em;
+        letter-spacing: 0;
+        padding: 10px 30px 10px 50px;
+        text-transform: capitalize;
+        margin: 0 auto;
+
+        i
+        {
+            font-size: $fontSizeBase * 1.4;
+            margin-left: $fontSizeBase;
+        }
+    }
+
+    &.btn-seja 
+    {
+        background: $primaryColor;
+        color: #373f4b;
+        font-size: $fontSizeBase * 1.6;
+        font-weight: $fontWeightSemiBold;
+        padding: 12px 30px;
+        text-transform: uppercase;
+    }
+
+    &.btn-conheca,
+    &.btn-veja
+    {
         &:hover,
         &:focus  
         {
@@ -125,7 +178,7 @@ a:focus
         {   
             display: block;
         } 
-
+        
     }
 
 }
@@ -135,15 +188,83 @@ a:focus
     position: relative;
     overflow: hidden;
 
-    &::before 
+    .ss-conteudo 
     {
-        content: "";
-        background-color: $primaryColor;
-        width: 100%;
-        height: 2px;
-        position: absolute;
-        top: 0;       
-        left: 0;
+        text-align: center;
+
+        p 
+        {
+            //font-weight: $fontWeightLight;
+        }
+    }
+
+    &.font-wt 
+    {
+        header 
+        {
+         
+            h2 
+            {
+                color: $primaryColor;
+            }
+
+            &::after 
+            {
+                background-color: $primaryColor;
+            }
+
+        }
+
+        p 
+        {
+            color: $primaryColor;
+        }
+
+    }   
+    
+    &.font-brw
+    {
+        header 
+        {
+         
+            h2 
+            {
+                color: $secondaryColor;
+            }
+
+            &::after 
+            {
+                background-color: $secondaryColor;
+            }
+
+        }
+
+        p 
+        {
+            color: $secondaryColor;
+        }
+    }
+
+}
+
+.lista-itens
+{
+    overflow: hidden;
+    margin: 0;
+    padding: 40px 0;
+
+    li 
+    {
+        list-style: inside none;
+        float: left;
+        width: 17%;
+        margin: 0 1.5% 3% 1.5%;
+
+        img 
+        {
+            width: 100%;
+        }
+
     }
 
 }

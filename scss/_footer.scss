@@ -6,6 +6,11 @@
     width: 1375px; 
     max-width: 100%;    
 
+    &::before 
+    {
+        display: none;
+    }
+
     img 
     {
         margin: 0 5px;

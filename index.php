@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Instituto 7 Vidas</title>
+    <script src="https://use.typekit.net/vic3gaj.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>    
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="pg-home">
 
     <div class="ss-wrapper">
 
@@ -15,32 +17,18 @@
 
         <main>
             
-            <section class="sessao ss-somos">
-
-                <div class="ss-container">
-
-                    <header>
-                        <h2>Quem Somos</h2>
-                    </header>
-
-                    <div class="ss-conteudo">
-                        <p>Lorem ipsum dolor sit vamet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <!-- end .ss-conteudo -->
-
-                    <a href="#" class="btn btn-conheca">Conheça</a>
-
-                </div>
-                <!-- end .ss-container -->
-
-            </section>
-            <!-- end .container -->
+            <?php include("./incs/somos-home.php"); ?>
+            <?php include("./incs/galeria-home.php"); ?>
+            <?php include("./incs/testemunhos-home.php"); ?>
+            <?php include("./incs/parceiros-home.php"); ?>
+            <?php include("./incs/ajude-home.php"); ?>       
 
         </main>
 
     </div>
     <!-- end .ss-wrapper -->
     <?php include("./incs/footer.php"); ?>
+    <?php include("./incs/scripts.php"); ?>
 
 </body>
 </html>

@@ -5,7 +5,6 @@
 
 .hd-container 
 {
-    background: url("../imgs/bg-header.jpg") no-repeat center top;
 
     @include breakpoint($allCelular)
     {   

@@ -3,6 +3,14 @@
     background: url("../imgs/ss-quem-somos.jpg") no-repeat top center;
     background-size: cover;
 
+    header
+    {
+        h2 
+        {
+            font-size: $fontSizeBase * 2.5;
+        }
+    }
+
     .ss-conteudo
     {
         text-align: right; 
@@ -35,4 +43,140 @@
 
     }
 
+}
+
+.ss-galeria-home 
+{
+    background-color: $bgColorGaleria;
+
+    .lista-galeria
+    {
+        padding: 60px 0 30px;
+
+        li 
+        {
+            box-shadow: $dropShadowNormal;
+        }
+
+    }
+
+}
+
+.ss-testemunhos
+{
+    background: url("../imgs/ss-testemunhos.jpg") no-repeat center top;
+    background-size: cover;
+
+    .owl-nav
+    {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+    }
+
+    .owl-prev 
+    {
+        right: 15%;
+    }
+
+    .owl-next 
+    {
+        left: 15%;
+    }    
+
+    .owl-prev,
+    .owl-next
+    {
+        position: absolute;
+        height: 30px;
+        margin-top: -15px;        
+        i
+        {
+            color: $bgColorBtnMais;
+        }
+    }
+
+    .item-depoimento
+    {
+        text-align: center;
+        padding: 0 25%;
+
+        img 
+        {
+            border: 2px solid $primaryColor;
+            border-radius: $radiusPadrao;
+            width: auto;
+            float: left;
+            margin-right: 10px;
+        }
+
+        p 
+        {
+            font-family: $secondaryFont;
+            font-weight: $fontWeightBold;
+
+            &::before 
+            {
+                content: '"';
+            }
+
+            &::after 
+            {
+                content: '"';
+            }            
+
+        }
+
+        footer 
+        {
+            text-align: left;
+            display: inline-block;
+            overflow: hidden;
+            min-width: 240px;
+            margin-top: 20px;
+        }
+
+        .autor 
+        {
+            padding: 5px 0;
+        }
+
+        h5
+        {
+            color: #444;
+            font-size: $fontSizeBase * 1.4;
+            font-weight: $fontWeightNormal;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+        }
+
+        h6 
+        {
+            color: #eb5951;
+            font-size: $fontSizeBase * 1.4;
+            font-weight: $fontWeightBold;
+            margin: 0;
+            padding: 0;
+        }
+
+    }
+
+}
+
+.ss-parceiros
+{
+    background: url("../imgs/ss-parceiros.jpg") no-repeat center center;
+    background-size: cover;    
+}
+
+.ss-ajude 
+{
+    h2 
+    {
+        font-size: $fontSizeBase * 3.5;
+        font-weight: $fontWeightLight;
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
 }

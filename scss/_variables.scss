@@ -1,9 +1,11 @@
 //Background Colors
 $bgColorPrimary: #96ccc7;
-$bgIconsHeader: #cbdad8;
+$bgColorGaleria: #c9b075;
+$bgIconsHeader: #cbdad8; 
  
 //Cores
 $primaryColor: #fff;  
+$secondaryColor: #4e4d4d;
 
 //Icons
 $iconsColor: #777978;
@@ -23,11 +25,13 @@ $iconsColor: #777978;
 
 //Botoes
 $radiusPadrao: 50px; 
-$bgColorBtn: #db5864;
+$bgColorBtn: #db5864; 
+$bgColorBtnMais: #eb5951;
 $bgColorBtnHover: #37a085;
 
 //Efeitos
 $dropShadow: 0px 0px 40px 0px rgba(0,0,0,0.5);
+$dropShadowNormal: 0 0 20px 0 rgba(0,0,0,0.3);
 $dropShadowLight: 2px 2px 5px 0px rgba(0,0,0,0.2);
 $transitionAll: all .15s ease-in-out;
 $transitionBg: background-color .5s ease-in-out;
