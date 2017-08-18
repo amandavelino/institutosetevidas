@@ -1,3 +1,39 @@
+.ss-slider-home
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    .legenda 
+    {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 20;
+
+        h2 
+        {
+            color: $primaryColor;
+            font-size: $fontSizeBase * 5.5;
+            font-weight: $fontWeightBold;
+            line-height: 1.5em;
+        }
+
+    }
+
+    .ss-container 
+    {
+        &::before 
+        {
+            display: none;
+        }
+    }
+}
+
 .ss-somos
 {
     background: url("../imgs/ss-quem-somos.jpg") no-repeat top center;
@@ -172,11 +208,14 @@
 
 .ss-ajude 
 {
-    h2 
+    background: url("../imgs/ss-voluntario.jpg") no-repeat center center;
+    background-size: cover;     
+    h2  
     {
         font-size: $fontSizeBase * 3.5;
         font-weight: $fontWeightLight;
         line-height: 1.2em;
+        padding: 0 25%;
         text-transform: uppercase;
     }
 }

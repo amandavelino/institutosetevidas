@@ -4,12 +4,20 @@
 <script>
     $(document).ready(function(){
 
+        $('.owl-home').owlCarousel({
+            items: 1,
+            nav: true,
+            navText: ['<i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>','<i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>'],
+            loop: true,
+            margin: 0
+        });
+
         $('.owl-testemunhos').owlCarousel({
             items: 1,
             nav: true,
             navText: ['<i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>','<i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>'],
             loop: true,
-            margin: 10
+            margin: 0
         });
 
     });//

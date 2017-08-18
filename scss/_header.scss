@@ -1,6 +1,9 @@
 #hd-principal
 {
-    position: relative;
+    position: absolute;
+    width: 100%;
+    z-index: 90;
+    background: $gradienteTopPrincipalToAlpha;
 }
 
 .hd-container 
@@ -53,7 +56,7 @@
             &:hover,
             &:focus 
             {
-                background: transparent;
+                // background-color: transparent;
                 text-transform: uppercase;
                 font-size: $fontSizeBase * 2;
                 font-weight: $fontWeightBold;                
@@ -82,24 +85,30 @@
     .icons-hd-ct
     {
         margin: ($fontSizeBase + 2) 0 0;
-        background: $bgIconsHeader;
-        border-radius: $radiusPadrao;
-        a 
+
+        li 
         {
-            padding: ($fontSizeBase/2) $grid-gutter-width;
-
-            &:hover,
-            &:focus 
+            a 
             {
-                background: $primaryColor;
-            }
+                background-color: $bgIconsHeader;
+                border-radius: $radiusPadrao;
+                padding: 4px 30px 1px;
+                transition: $transitionBg;
 
-            i 
-            {
-                color: $iconsColor;
-                font-size: $fontSizeBase * 1.6;
+                &:hover,
+                &:focus
+                {
+                    background-color: #fff;
+                }
+
+                i 
+                {
+                    color: #666;
+                    font-size: $fontSizeBase * 1.6;
+                }
             }
         }
+
     }
 
 }

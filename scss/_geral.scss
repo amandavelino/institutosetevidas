@@ -27,6 +27,7 @@ a:focus
 p 
 {
     font-size: $fontSizeBase * 1.5;
+    line-height: 1.5em;
 }
 
 .ss-wrapper 
@@ -36,7 +37,8 @@ p
     width: 1375px; 
     max-width: 100%;  
     margin: 30px auto 0;  
-    overflow: hidden;  
+    overflow: hidden; 
+    position: relative; 
 }
 
 .ss-container 
@@ -126,7 +128,7 @@ p
     line-height: 1em;
     padding: 12px 50px;
     letter-spacing: 1px;
-    transition: $transitionBg;
+    transition: $transitionAll5s;
 
     &.btn-conheca 
     {
@@ -158,6 +160,7 @@ p
     {
         background: $primaryColor;
         color: #373f4b;
+        box-shadow: $dropShadowLight;
         font-size: $fontSizeBase * 1.6;
         font-weight: $fontWeightSemiBold;
         padding: 12px 30px;
@@ -165,7 +168,8 @@ p
     }
 
     &.btn-conheca,
-    &.btn-veja
+    &.btn-veja,
+    &.btn-seja
     {
         &:hover,
         &:focus  
