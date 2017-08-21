@@ -36,77 +36,7 @@
         {
             font-size: $fontSizeBase * 1.6;
         }
-    }
-
-    &.ss-txt
-    {
-
-        header 
-        {
-            h2 
-            {
-                font-size: $fontSizeBase * 3;
-            }
-
-        }   
-
-        .ss-conteudo
-        {
-            width: 530px;
-            max-width: 100%;
-
-            p
-            {
-                font-size: $fontSizeBase * 2.5;
-                font-weight: $fontWeightLight;
-            }
-        }
-    }
-
-    &.ss-txt-rgt
-    {
-
-        header 
-        {
-            text-align: right;
-
-            &::after 
-            {
-                right: 0;
-                margin-right: 0;
-            }
-
-        }
-
-        .ss-conteudo
-        {
-            text-align: right;
-            float: right;
-        }
-    }
-
-    &.ss-txt-lft
-    {
-
-        header 
-        {
-            text-align: left;
-
-            &::after 
-            {
-                right: initial;
-                left: 0;
-                margin-right: 0;
-            }
-
-        }
-
-        .ss-conteudo
-        {
-            text-align: left;
-            //float: right;
-        }
-    }    
+    }  
     
     .ss-container-pd 
     {
@@ -120,6 +50,75 @@
     }
 
 }
+
+.ss-txt
+{
+
+    header 
+    {
+        h2 
+        {
+            font-size: $fontSizeBase * 3;
+        }
+
+    }   
+
+    .ss-conteudo
+    {
+        width: 530px;
+        max-width: 100%;
+
+        p
+        {
+            font-size: $fontSizeBase * 2.5;
+            font-weight: $fontWeightLight;
+        }
+    }
+}
+
+.ss-txt-rgt
+{
+
+    header 
+    {
+        text-align: right;
+
+        &::after 
+        {
+            right: 0;
+            margin-right: 0;
+        }
+
+    }
+
+    .ss-conteudo
+    {
+        text-align: right;
+        float: right;
+    }
+}
+
+.ss-txt-lft
+{
+
+    header 
+    {
+        text-align: left;
+
+        &::after 
+        {
+            right: initial;
+            left: 0;
+            margin-right: 0;
+        }
+
+    }
+
+    .ss-conteudo
+    {
+        text-align: left;
+    }
+}  
 
 //Quem Somos
 .pg-somos
@@ -255,6 +254,52 @@
 
         }
 
+    }
+
+}
+
+.pg-como-ajudar
+{
+
+    .ss-txt 
+    {
+        h2 
+        {
+            //font-size: $fontSizeBase * 2.5;
+            font-weight: $fontWeightLight;
+        }
+    }
+
+    .hd-topo
+    {
+        text-align: center;
+        margin-bottom: 80px;
+        &::after 
+        {
+            right: initial;
+            margin-right: inherit;
+        }
+    }
+
+    .ss-conteudo-interna
+    {
+        width: 350px;
+
+        h2 
+        {
+            //font-size: $fontSizeBase * 3; 
+        }
+    }
+
+    .ss-container-pd 
+    {
+        padding: 40px;
+        padding-bottom: 160px;
+    }
+
+    .ss-ajudar-futuro 
+    {
+        background-image: url("../imgs/como-ajudar-futuro.jpg"); 
     }
 
 }

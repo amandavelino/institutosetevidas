@@ -12,7 +12,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand logo-img" href="#"><img src="./imgs/setevidas.png" alt="Instituto Sete Vidas" border="0"></a>
+                    <a class="navbar-brand logo-img" href="index.php"><img src="./imgs/setevidas.png" alt="Instituto Sete Vidas" border="0"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
