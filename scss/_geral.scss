@@ -9,6 +9,11 @@ body
     {
         background-color: $bgColorPrimary;
     }
+
+    &.pg-somos
+    {
+        background-color: $bgQuemSomos;
+    }
 }
 
 img 
@@ -27,6 +32,7 @@ a:focus
 p 
 {
     font-size: $fontSizeBase * 1.5;
+    font-weight: $fontWeightNormal;
     line-height: 1.5em;
 }
 
@@ -271,4 +277,19 @@ p
 
     }
 
+}
+
+.ss-ajude 
+{
+    background: url("../imgs/ss-voluntario.jpg") no-repeat center center;
+    background-size: cover;     
+    h2  
+    {
+        font-size: $fontSizeBase * 3.5;
+        font-weight: $fontWeightLight;
+        line-height: 1.2em;
+        letter-spacing: 10px;
+        padding: 0 25%;
+        text-transform: uppercase;
+    }
 }

@@ -19,11 +19,11 @@
                 <div class="collapse navbar-collapse nav-ct" id="menu-mobile">
 
                     <ul class="nav nav-principal">
-                        <li class="active"><a href="#">Inicío<span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Quem Somos</a></li>
-                        <li><a href="#">Como Ajudar</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li class="active"><a href="index.php">Inicío<span class="sr-only">(current)</span></a></li>
+                        <li><a href="quem-somos.php">Quem Somos</a></li>
+                        <li><a href="como-ajudar.php">Como Ajudar</a></li>
+                        <li><a href="blog.php">Blog</a></li>
+                        <li><a href="contato.php">Contato</a></li>
                     </ul>
                     
                     <ul class="nav navbar-nav navbar-right icons-hd-ct">

@@ -3,7 +3,11 @@ $bgColorPrimary: #96ccc7;
 $bgColorGaleria: #c9b075;
 $bgIconsHeader: #dde8e7; 
 $bgFooterLogo: #b5be9f;
- 
+
+//Bg paginas 
+$bgQuemSomos: #bccf9f;
+
+
 //Cores
 $primaryColor: #fff;  
 $secondaryColor: #4e4d4d;
@@ -28,13 +32,24 @@ $iconsColor: #777978;
 
 //Botoes
 $radiusPadrao: 50px; 
+$radius100: 100%; 
 $bgColorBtn: #db5864; 
 $bgColorBtnMais: #eb5951;
 $bgColorBtnHover: #37a085;
 
 //Efeitos
 $gradienteBottomBlackToAlpha: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
-$gradienteTopPrincipalToAlpha: linear-gradient(0deg, rgba(150,204,199,0) 0%, rgba(150,204,199,0.5) 40%, rgba(150,204,199,1) 100%);
+$gradienteTopPrincipal: linear-gradient(0deg, rgba(150,204,199,0) 0%, rgba(150,204,199,0.5) 50%, rgba(150,204,199,1) 100%);
+$gradienteTopQuemSomos: linear-gradient(0deg, rgba(188,207,159,0) 0%, rgba(188,207,159,0.5) 50%, rgba(188,207,159,1) 100%);
+
+/*
+//Mixin Linear Grandiente
+@mixin linear-gradient($colorPrimary, $colorSecondary)
+{
+  background: linear-gradient(0deg, rgba(150,204,199,0) 0%, rgba(150,204,199,0.5) 40%, rgba(150,204,199,1) 100%);
+}
+*/
+
 $dropShadow: 0px 0px 40px 0px rgba(0,0,0,0.5);
 $dropShadowNormal: 0 0 20px 0 rgba(0,0,0,0.3);
 $dropShadowLight: 2px 2px 5px 0px rgba(0,0,0,0.2);

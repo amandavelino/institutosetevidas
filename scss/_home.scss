@@ -205,17 +205,3 @@
     background: url("../imgs/ss-parceiros.jpg") no-repeat center center;
     background-size: cover;    
 }
-
-.ss-ajude 
-{
-    background: url("../imgs/ss-voluntario.jpg") no-repeat center center;
-    background-size: cover;     
-    h2  
-    {
-        font-size: $fontSizeBase * 3.5;
-        font-weight: $fontWeightLight;
-        line-height: 1.2em;
-        padding: 0 25%;
-        text-transform: uppercase;
-    }
-}

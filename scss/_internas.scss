@@ -1,0 +1,260 @@
+//Sessão Topo de cada página interna.
+.ss-topo
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;    
+
+    img 
+    {
+        max-width: 100%;
+    }
+
+} 
+
+.ss-interna 
+{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; 
+
+    header 
+    {
+        h2 
+        {
+            font-size: $fontSizeBase * 2.5;
+        }
+
+    }  
+
+    .ss-conteudo
+    {
+        p 
+        {
+            font-size: $fontSizeBase * 1.6;
+        }
+    }
+
+    &.ss-txt
+    {
+
+        header 
+        {
+            h2 
+            {
+                font-size: $fontSizeBase * 3;
+            }
+
+        }   
+
+        .ss-conteudo
+        {
+            width: 530px;
+            max-width: 100%;
+
+            p
+            {
+                font-size: $fontSizeBase * 2.5;
+                font-weight: $fontWeightLight;
+            }
+        }
+    }
+
+    &.ss-txt-rgt
+    {
+
+        header 
+        {
+            text-align: right;
+
+            &::after 
+            {
+                right: 0;
+                margin-right: 0;
+            }
+
+        }
+
+        .ss-conteudo
+        {
+            text-align: right;
+            float: right;
+        }
+    }
+
+    &.ss-txt-lft
+    {
+
+        header 
+        {
+            text-align: left;
+
+            &::after 
+            {
+                right: initial;
+                left: 0;
+                margin-right: 0;
+            }
+
+        }
+
+        .ss-conteudo
+        {
+            text-align: left;
+            //float: right;
+        }
+    }    
+    
+    .ss-container-pd 
+    {
+        padding: 180px 40px;
+        width: auto;   
+        @include breakpoint($smallDesktop)
+        {   
+            padding: 100px 0;
+        } 
+
+    }
+
+}
+
+//Quem Somos
+.pg-somos
+{
+
+    .ss-somos-missao
+    {
+        background-image: url("../imgs/quem-somos-missao.jpg"); 
+    }
+
+    .ss-somos-visao 
+    {
+        background-image: url("../imgs/quem-somos-visao.jpg"); 
+    }
+
+    .ss-somos-valores 
+    {
+        background-image: url("../imgs/quem-somos-valores.jpg"); 
+    }   
+    
+    .ss-somos-equipe 
+    {
+        background-image: url("../imgs/quem-somos-equipe.jpg"); 
+    }       
+
+    .lista-membros
+    {
+
+        float: left;
+        overflow: initial;
+        width: 100%;
+
+        li 
+        {
+            float: left;
+            width: 100%;
+            position: relative;
+            margin: 0;
+            margin-bottom: -40px;
+            z-index: 20;            
+        }
+
+        figure 
+        {
+            border-radius: $radius100;
+            position: relative;
+            z-index: 20;
+            overflow: hidden;
+            width: 320px;
+            height: 320px;
+        }
+
+        header 
+        {
+            text-align: left;
+            margin-bottom: 20px;
+            padding: 0;
+
+            &::after 
+            {
+                display: none;
+            }
+
+            h3, h4 
+            {
+                color: $secondaryColor;
+                margin: 0;
+                padding: 0;
+                text-transform: uppercase;
+            }
+
+            h3 
+            {
+                
+                font-size: $fontSizeBase * 2.8;
+                font-weight: $fontWeightNormal;
+            }
+
+            h4 
+            {
+                font-size: $fontSizeBase * 1.6;
+                font-weight: $fontWeightSemiBold;
+                padding-top: 5px;
+            }
+        }
+
+        .txt-membro 
+        {
+            background: $primaryColor;
+            background-clip: padding-box;
+            border: 9px solid rgba(57, 74, 58, 0.1);
+            border-top-right-radius: 150px;
+            border-bottom-right-radius: 150px;
+            position: absolute;
+            top: 15px;
+            padding: 20px 50px;
+            padding-left: 180px;
+            width: 640px;
+            left: 160px;
+            height: 290px;
+
+            p 
+            {
+                font-size: $fontSizeBase * 2;
+                line-height: 1.2em;
+                margin: 0;
+            }        
+
+        }
+
+
+        /* Alinhado à direita */
+
+        .right
+        {
+
+            figure 
+            {
+                float: right;
+            }
+
+            .txt-membro
+            {
+                border-radius: 0;
+                border-top-left-radius: 150px;
+                border-bottom-left-radius: 150px;
+                padding-right: 180px;
+                padding-left: 90px;
+                right: 160px;
+                left: initial;
+                width: 700px;
+            }    
+
+        }
+
+    }
+
+}
