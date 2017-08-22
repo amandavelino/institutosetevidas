@@ -127,7 +127,7 @@
             </section>
             <!-- end .ss-somos-equipe -->                
 
-            <?php include("./incs/ajude-home.php"); ?> 
+            <?php include("./incs/ajude-footer.php"); ?> 
             <?php include("./incs/footer.php"); ?>      
 
         </main>

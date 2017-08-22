@@ -54,6 +54,12 @@
 .ss-txt
 {
 
+    .hd-w-legenda 
+    {
+        text-align: center;
+        position: relative;
+    }
+
     header 
     {
         h2 
@@ -108,7 +114,8 @@
         &::after 
         {
             right: initial;
-            left: 0;
+            left: 50%;
+            margin-left: -25px;
             margin-right: 0;
         }
 
@@ -265,7 +272,7 @@
     {
         h2 
         {
-            //font-size: $fontSizeBase * 2.5;
+            font-size: $fontSizeBase * 2.5;
             font-weight: $fontWeightLight;
         }
     }
@@ -287,7 +294,7 @@
 
         h2 
         {
-            //font-size: $fontSizeBase * 3; 
+            font-size: $fontSizeBase * 3; 
         }
     }
 
@@ -300,6 +307,291 @@
     .ss-ajudar-futuro 
     {
         background-image: url("../imgs/como-ajudar-futuro.jpg"); 
+    }
+
+    .ss-ajudar-apadrinhamento
+    {
+        background-image: url("../imgs/como-ajudar-apadrinhamento.jpg");
+    }
+
+    .ss-ajudar-apadrinhamento,
+    .ss-ajudar-sonho
+    {
+
+        .hd-w-legenda
+        {
+            margin-bottom: 80px;
+            p 
+            {
+                margin: 0;
+            }
+        }
+
+        .hd-topo
+        {
+            margin-bottom: 0;
+        }
+
+        .ss-container-pd
+        {
+            padding-bottom: 100px;
+        }
+
+        .ss-conteudo-interna
+        {
+
+            header 
+            {
+                &::after 
+                {
+                    left: 0;
+                    margin-left: 0;
+                }
+            }
+
+            p 
+            {
+                font-size: $fontSizeBase * 2;
+            }
+        }
+
+    }
+
+    .ss-ajudar-sonho
+    {
+        background-color: $colorBtnDoe;
+        
+        &::after 
+        {
+            content: "";
+            background: url("../imgs/pattern-ls.png") repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .2;
+        }
+
+        .item
+        {
+            position: relative;
+        }
+
+        .item-row 
+        {
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: $dropShadowNormal;
+            overflow: hidden;
+            height: 180px;
+
+            .header 
+            {
+                background-color: $bgHeaderItem;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                box-shadow: $dropShadowNormal;
+                text-align: center;
+                padding: 10px;
+                padding-bottom: 20px;
+                h5
+                {
+                    font-size: $fontSizeBase * 1.5;
+                    font-weight: $fontWeightMedium;
+                    line-height: 1.2em;
+                    margin: 0;                    
+                }
+            }
+
+            .conteudo-lista
+            {
+                background: $primaryColor;
+                border-radius: 10px;              
+                box-shadow: $dropShadowNormal;
+                cursor: pointer;
+                padding: 20px 15px;
+                margin-top: -10px;
+                position: relative;
+                z-index: 10;
+            }
+
+            .hd-conteudo
+            {
+                overflow: hidden;
+                margin-bottom: 20px;
+                position: relative;
+            }
+
+            .favoritar 
+            {
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 20px;
+                height: 20px;
+                opacity: 0;
+                transition: opacity .5s;
+                i 
+                {
+                    color: $colorHeaderFSonho;
+                }
+            }
+
+            &.amei 
+            {
+                .favoritar
+                {
+                    opacity: 1;
+                }
+            }
+
+            figure 
+            {
+                border: 2px solid $bgHeaderItem;
+                border-radius: $radius100;
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+                float: left;
+                margin-right: 10px;
+                img 
+                {
+                    max-width: 100%;
+                }
+            }
+
+            &.fm 
+            {
+                figure 
+                {
+                    border: 2px solid $colorHeaderFSonho;
+                }
+            }            
+
+            .hgroup
+            {
+                padding: 30px 0 0;
+            }
+
+            h3, h4 
+            {
+                color: $bgHeaderItem;
+                margin: 0;
+                padding: 0;
+                line-height: 1em;
+            }
+
+            &.fm 
+            {
+                h3, h4 
+                {
+                    color: $colorHeaderFSonho;
+                }
+            }
+
+            h3 
+            {
+                font-size: $fontSizeBase * 2;
+            }
+
+            h4 
+            {
+                font-size: $fontSizeBase * 1.9;
+            }
+
+            p 
+            {
+                color: $secondaryColor;
+                font-size: $fontSizeBase * 1.2;
+                font-weight: $fontWeightMedium;
+                text-align: justify;
+                line-height: 1.3em;
+            }
+
+        }
+
+    }
+
+    /* Carousel Owl */
+
+    .owl-lista-criancas
+    {
+
+        .owl-nav
+        {
+            width: 450px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            height: 70px;
+            padding: 40px 0 0;
+        }
+
+        .owl-next, .owl-prev 
+        {
+            position: absolute;
+        }
+
+        .owl-next 
+        {
+            right: 0;
+        }
+
+        .owl-prev 
+        {
+            left: 0;
+        }
+
+        .owl-dots 
+        {
+            position: relative;
+            text-align: center;
+            width: 400px;
+            margin: -33px auto 0;
+
+            .owl-dot 
+            {
+                display: inline-block;
+                zoom: 1;
+
+                span 
+                {
+                    background: $primaryColor;
+                    border-radius: 30px;
+                    color: $bgHeaderItem;
+                    display: block;
+                    font-size: $fontSizeBase * 1.5;
+                    width: 25px;
+                    height: 25px;
+                    margin: 5px;
+                    padding: 2px 0;
+                    opacity: .7;
+                    transition: opacity .2s ease;    
+                }
+
+                &.active,
+                &:hover
+                {
+                    span 
+                    {
+                        opacity: 1; 
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .item
+    {
+        img 
+        {
+            width: auto;
+        }
     }
 
 }

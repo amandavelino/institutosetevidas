@@ -178,9 +178,45 @@ p
         text-transform: uppercase;
     }
 
+    &.btn-doe
+    {
+        color: $colorBtnDoe;
+        font-size: $fontSizeBase * 2;
+        font-weight: $fontWeightMedium;
+        padding: 12px 80px;
+    }
+
+    &.btn-apadrinhe
+    {
+        background: $bgBgColorBtn;
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px; 
+        box-shadow: $dropShadowNormal;         
+        font-size: $fontSizeBase * 1.5;
+        font-weight: $fontWeightMedium;        
+        width: 100%;
+        letter-spacing: 0;
+        margin-top: -10px;
+        position: relative;
+        text-transform: capitalize;
+        text-align: center;
+        padding: 20px 10px 10px;
+        z-index: 0;
+
+        &:hover,
+        &:focus 
+        {
+            background: $bgHeaderItem;
+            color: #fff;             
+        }
+
+    }
+
     &.btn-conheca,
     &.btn-veja,
-    &.btn-seja
+    &.btn-seja,
+    &.btn-doe
     {
         &:hover,
         &:focus  
@@ -202,6 +238,7 @@ p
 {
     position: relative;
     overflow: hidden;
+    z-index: 10;
 
     .ss-conteudo 
     {

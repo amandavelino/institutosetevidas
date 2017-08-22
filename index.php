@@ -14,7 +14,7 @@
             <?php include("./incs/galeria-home.php"); ?>
             <?php include("./incs/testemunhos-home.php"); ?>
             <?php include("./incs/parceiros-home.php"); ?>
-            <?php include("./incs/ajude-home.php"); ?> 
+            <?php include("./incs/ajude-footer.php"); ?> 
             <?php include("./incs/footer.php"); ?>       
 
         </main>
