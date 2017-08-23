@@ -9,15 +9,29 @@ $bgBgColorBtn: #94bc62;
 //Bg paginas 
 $bgQuemSomos: #bccf9f;
 $bgComoAjudar: #eb5951;
+$bgContato: $bgComoAjudar;
 
 //Cores
 $primaryColor: #fff;  
 $secondaryColor: #4e4d4d;
 $terciaryColor: #ddd;
 $forfthColor: #c6d0ae;
+
+//Como Ajudar
 $colorBtnDoe: #d9524b;
 $colorHeaderFSonho: #db5864;
+$colorLinksBlack: #666;
+$colorH4Passos: #bccf9f;
+
+//Pagina Contato
+$colorHeaderFormContato: #777;
+$borderColorItens: #f7df7b;
  
+$inputBg1: #f7b6a7;
+$inputBg2: #96ccc7;
+$inputBg3: #c4d4aa;
+$inputBg4: #f7df7b;
+
 //Icons
 $iconsColor: #777978;
 
@@ -46,6 +60,7 @@ $gradienteBottomBlackToAlpha: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0
 $gradienteTopPrincipal: linear-gradient(0deg, rgba(150,204,199,0) 0%, rgba(150,204,199,0.5) 50%, rgba(150,204,199,1) 100%);
 $gradienteTopQuemSomos: linear-gradient(0deg, rgba(188,207,159,0) 0%, rgba(188,207,159,0.5) 50%, rgba(188,207,159,1) 100%);
 $gradienteTopComoAjudar: linear-gradient(0deg, rgba(235,89,81,0) 0%, rgba(235,89,81,0.5) 50%, rgba(235,89,81,1) 100%); 
+$gradienteTopContato: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,1) 100%);
 
 /*
 //Mixin Linear Grandiente

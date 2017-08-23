@@ -12,7 +12,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand logo-img" href="index.php"><img src="./imgs/setevidas.png" alt="Instituto Sete Vidas" border="0"></a>
+                    <a class="navbar-brand logo-img" href="index.php">
+                        <?php //se não for contato, usar a logo white ?>
+                        <?php if($pagina != $www . "contato.php"): ?>
+                            <img src="./imgs/setevidas.png" alt="Instituto Sete Vidas" border="0">
+                        <?php else: ?>
+                            <?php //se for contato mudar a logo para versão black ?>
+                            <img src="./imgs/setevidas-blk.png" alt="Instituto Sete Vidas" border="0">
+                        <?php endif; ?>
+                    </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -26,9 +34,12 @@
                         <li><a href="contato.php">Contato</a></li>
                     </ul>
                     
+                    <?php //se não for contato, aparece o busca no topo ?>
+                    <?php if($pagina != $www . "contato.php"): ?>
                     <ul class="nav navbar-nav navbar-right icons-hd-ct">
                         <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                     </ul>
+                    <?php endif; ?>
                     
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->

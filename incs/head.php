@@ -7,3 +7,11 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>    
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+<?php
+
+    $servidor = $_SERVER['SERVER_NAME'];
+    $pagina = $_SERVER ['REQUEST_URI'];
+    $www = "/www/";
+    //echo $pagina;
+
+?>

@@ -16,6 +16,12 @@
     background: $gradienteTopComoAjudar;
 }
 
+.pg-contato #hd-principal
+{
+    background: transparent;
+    margin-top: 55px;
+}
+
 .hd-container 
 {
 
@@ -89,6 +95,7 @@
 
 }
 
+
 .ss-navbar
 {
 
@@ -101,7 +108,7 @@
             a 
             {
                 background-color: $primaryColor;
-                background-color: rgba(255,255,255,0.4);
+                background-color: rgba(255,255,255,0.7);
                 border-radius: $radiusPadrao;
                 padding: 4px 30px 1px;
                 transition: $transitionBg;
@@ -109,12 +116,12 @@
                 &:hover,
                 &:focus
                 {
-                    background-color: rgba(255,255,255,0.6);
+                    background-color: rgba(255,255,255,0.7);
                 }
 
                 i 
                 {
-                    color: #666;
+                    color: #444;
                     font-size: $fontSizeBase * 1.6;
                 }
             }
@@ -122,4 +129,15 @@
 
     }
 
+}
+
+.pg-contato
+{
+    .nav-principal
+    {
+        a 
+        {
+            color: $colorLinksBlack;
+        }
+    }
 }

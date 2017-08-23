@@ -19,6 +19,11 @@ body
     {
         background-color: $bgComoAjudar;
     }    
+
+    &.pg-contato
+    {
+        background-color: $bgContato;
+    }
 }
 
 img 
@@ -296,6 +301,29 @@ p
             color: $secondaryColor;
         }
     }
+
+    &.font-gray
+    {
+        header 
+        {
+         
+            h2 
+            {
+                color: $colorHeaderFormContato;
+            }
+
+            &::after 
+            {
+                background-color: $colorHeaderFormContato;
+            }
+
+        }
+
+        p 
+        {
+            color: $colorHeaderFormContato;
+        }
+    }    
 
 }
 
