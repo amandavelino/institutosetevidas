@@ -7,8 +7,9 @@
         $('.owl-home').owlCarousel({
             items: 1,
             nav: true,
+            dots: true,
             navText: ['<i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>','<i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>'],
-            loop: true,
+            loop: false,
             margin: 0
         });
 

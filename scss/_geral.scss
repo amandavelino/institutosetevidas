@@ -363,3 +363,14 @@ p
         text-transform: uppercase;
     }
 }
+
+.ss-slider-home
+{
+    .btn-conheca
+    {
+        background-color: $bgColorBtnSlider;
+        float: none;
+        padding: 12px 35px;
+        letter-spacing: 0;
+    }
+}

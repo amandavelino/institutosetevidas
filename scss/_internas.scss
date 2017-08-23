@@ -818,6 +818,7 @@
         overflow: hidden;
         padding: 0 10%;
         margin-top: 30px;
+        text-align: center;
 
         label
         {
@@ -861,7 +862,24 @@
                 background-color: $inputBg4;
             }
 
+        }
 
+        .input-submit
+        {
+            background-color: $inputBg4;
+            border: 2px solid #777;
+            border-radius: 25px;
+            box-sizing: border-box;
+            color: #777;
+            font-family: $primaryFont;
+            font-size: $fontSizeBase * 1.6;
+            font-weight: $fontWeightNormal;
+            letter-spacing: 1px;
+            padding: 5px 20px;
+            outline: none;
+            text-transform: uppercase;
+            width: 140px;
+            margin: 0 auto;
         }
 
     }

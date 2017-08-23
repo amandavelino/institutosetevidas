@@ -131,7 +131,7 @@
                         <!-- end .form-info -->
 
                         <div class="form-container">
-                            
+                            <input type="submit" class="input-submit input inputBg4" value=" Enviar ">
                         </div>
                         <!-- end .form-info -->                        
 
