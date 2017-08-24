@@ -20,6 +20,11 @@ body
         background-color: $bgComoAjudar;
     }    
 
+    &.pg-blog
+    {
+        background-color: $bgBlog;
+    }
+
     &.pg-contato
     {
         background-color: $bgContato;

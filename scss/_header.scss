@@ -6,7 +6,7 @@
     background: $gradienteTopPrincipal;
 }
 
-.pg-somos #hd-principal
+.pg-somos #hd-principal 
 {
     background: $gradienteTopQuemSomos; 
 }
@@ -14,6 +14,11 @@
 .pg-como-ajudar #hd-principal
 {
     background: $gradienteTopComoAjudar;
+}
+
+.pg-blog #hd-principal
+{
+    background: $gradienteTopBlog;
 }
 
 .pg-contato #hd-principal

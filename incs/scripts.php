@@ -1,6 +1,8 @@
 <script src="./bower_components/jquery/dist/jquery.min.js"></script>
 <script src="./js/smoothscroll.min.js"></script>
 <script src="./bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="./js/spinners/spinners.min.js"></script>
+<script src="./js/lightview/lightview.js"></script>
 <script>
     $(document).ready(function(){      
 

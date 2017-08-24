@@ -11,34 +11,75 @@
 
             <ul class="lista-itens lista-galeria">
                 <li>
-                    <img src="http://via.placeholder.com/160x160" border="0">
+                    <a href="imgs/monica-hesketh.jpg"
+                    class="lightview"
+                    data-lightview-group-options="skin: 'mac', border: 0, radius: 0"
+                    data-lightview-group="galeria_gp">
+                        <img src="http://via.placeholder.com/160x160" border="0">
+                    </a>
                 </li>
                 <li>
-                    <img src="http://via.placeholder.com/160x160" border="0">
+                    <a href="imgs/monica-hesketh.jpg"
+                    class="lightview"
+                    data-lightview-group="galeria_gp">                
+                        <img src="http://via.placeholder.com/160x160" border="0">
+                    </a>
                 </li>
                 <li>
-                    <img src="http://via.placeholder.com/160x160" border="0">
+                    <a href="imgs/monica-hesketh.jpg"
+                    class="lightview"
+                    data-lightview-group="galeria_gp">                
+                        <img src="http://via.placeholder.com/160x160" border="0">
+                    </a>
                 </li>
                 <li>
-                    <img src="http://via.placeholder.com/160x160" border="0">
+                    <a href="imgs/monica-hesketh.jpg"
+                    class="lightview"
+                    data-lightview-group="galeria_gp">                
+                        <img src="http://via.placeholder.com/160x160" border="0">
+                    </a>
                 </li>
                 <li>
-                    <img src="http://via.placeholder.com/160x160" border="0">
+                    <a href="imgs/monica-hesketh.jpg"
+                    class="lightview"
+                    data-lightview-group="galeria_gp">                
+                        <img src="http://via.placeholder.com/160x160" border="0">
+                    </a>
                 </li>  
                 <li>
-                    <img src="http://via.placeholder.com/160x160" border="0">
+                    <a href="imgs/monica-hesketh.jpg"
+                    class="lightview"
+                    data-lightview-group="galeria_gp">                
+                        <img src="http://via.placeholder.com/160x160" border="0">
+                    </a>
                 </li>
                 <li>
-                    <img src="http://via.placeholder.com/160x160" border="0">
+                    <a href="imgs/monica-hesketh.jpg"
+                    class="lightview"
+                    data-lightview-group="galeria_gp">                
+                        <img src="http://via.placeholder.com/160x160" border="0">
+                    </a>
                 </li>
                 <li>
-                    <img src="http://via.placeholder.com/160x160" border="0">
+                    <a href="imgs/monica-hesketh.jpg"
+                    class="lightview"
+                    data-lightview-group="galeria_gp">                
+                        <img src="http://via.placeholder.com/160x160" border="0">
+                    </a>
                 </li>
                 <li>
-                    <img src="http://via.placeholder.com/160x160" border="0">
+                    <a href="imgs/monica-hesketh.jpg"
+                    class="lightview"
+                    data-lightview-group="galeria_gp">                
+                        <img src="http://via.placeholder.com/160x160" border="0">
+                    </a>
                 </li>
                 <li>
-                    <img src="http://via.placeholder.com/160x160" border="0">
+                    <a href="imgs/monica-hesketh.jpg"
+                    class="lightview"
+                    data-lightview-group="galeria_gp">                
+                        <img src="http://via.placeholder.com/160x160" border="0">
+                    </a>
                 </li>                                                                                                                                            
             </ul>
             <!-- end .lista-galeria -->

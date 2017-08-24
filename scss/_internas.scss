@@ -265,6 +265,7 @@
 
 }
 
+//Como Ajudar
 .pg-como-ajudar
 {
 
@@ -592,6 +593,81 @@
         {
             width: auto;
         }
+    }
+
+}
+
+//Blog
+.pg-blog 
+{
+    .ss-blog 
+    {
+
+        background-color: $primaryColor;
+        padding: 30px 0;
+
+        .hd-topo 
+        {
+            text-align: center;
+            padding: 0 0 20px;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+
+            &::after 
+            {
+                content: "";
+                background-color: $secondaryColor;
+                width: 50px;
+                height: 2px;
+                position: absolute;
+                right: 50%;
+                margin-right: -25px;
+                bottom: 10px; 
+    
+                @include breakpoint($allCelular)
+                {   
+                    right: 50%;
+                    margin-right: -25px;
+                } 
+    
+            }
+    
+            h2 
+            {
+                color: $secondaryColor;
+                font-size: $fontSizeBase * 2.5;
+                line-height: 1.3em;
+                font-weight: $fontWeightNormal;
+                letter-spacing: 4px;
+                margin: 0;
+                padding: 0; 
+                text-transform: uppercase;
+    
+                @include breakpoint($allCelular)
+                {   
+                    font-size: $fontSizeBase * 2;
+                    float: none;
+                    max-width: 100%;
+                    width: 100%;
+                } 
+    
+            }
+        }
+    }
+
+    .noticias 
+    {
+        article 
+        {
+            margin-bottom: 100px;
+            position: relative;
+        }
+    }
+
+    aside 
+    {
+        float: right;
     }
 
 }
