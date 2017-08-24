@@ -11,10 +11,16 @@
         </div>
         <!-- end .ss-conteudo -->
 
-        <ul class="lista-itens">
+        <ul class="lista-itens lista-parceiros">
             <li>
-                <a href="#"></a>
+                <a href="#"><img src="./imgs/temp/parc-01.png" border="0"></a>
             </li>
+            <li>
+                <a href="#"><img src="./imgs/temp/parc-02.png" border="0"></a>
+            </li>  
+            <li>
+                <a href="#"><img src="./imgs/temp/parc-01.png" border="0"></a>
+            </li>                        
         </ul>
         <!-- end .lista-itens -->
 

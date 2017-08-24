@@ -166,6 +166,19 @@
 {
     background-color: $bgColorGaleria;
 
+    &::after 
+    {
+        background: url("../imgs/pattern-ls-blk.png") repeat;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: .8;
+    }
+
     .lista-galeria
     {
         padding: 60px 0 30px;
@@ -285,4 +298,32 @@
 {
     background: url("../imgs/ss-parceiros.jpg") no-repeat center center;
     background-size: cover;    
+
+    .lista-parceiros 
+    {
+        height: 100%;
+        min-height: 100%;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;     
+        
+        li 
+        {
+            display: inline-block;
+            margin: 0;
+            text-align: center;
+
+            img 
+            {
+                margin: 0 auto;
+                width: auto;
+            }
+
+        }
+
+    }
+
 }
