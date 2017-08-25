@@ -4,30 +4,68 @@
     width: 100%;
     z-index: 90;
     background: $gradienteTopPrincipal;
-
-    
-
+    .nav-principal
+    {     
+        @include breakpoint($allCelular)
+        { 
+            background-color: rgb(150,204,199);
+        }
+    }
 }
 
 .pg-somos #hd-principal 
 {
     background: $gradienteTopQuemSomos; 
+    .nav-principal
+    {
+        @include breakpoint($allCelular)
+        {   
+            background-color: rgb(188,207,159);  
+        } 
+    }    
 }
 
 .pg-como-ajudar #hd-principal
 {
     background: $gradienteTopComoAjudar;
+    .nav-principal
+    {    
+        @include breakpoint($allCelular)
+        {   
+            background-color: rgb(235,89,81);  
+        }      
+    }
 }
 
 .pg-blog #hd-principal
 {
     background: $gradienteTopBlog;
+    .nav-principal
+    {     
+        @include breakpoint($allCelular)
+        {   
+            background-color: rgb(77,76,76);  
+        } 
+    }     
 }
 
 .pg-contato #hd-principal
 {
-    background: transparent;
+    background: $gradienteTopContato;
     margin-top: 55px;
+    max-width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+    .nav-principal
+    {
+        @include breakpoint($allCelular)
+        {   
+            background-color: $primaryColor; 
+            border: 1px solid #ddd;
+            margin: 0;
+            border-top: 0;            
+        } 
+    }         
 }
 
 .hd-container 
@@ -57,17 +95,29 @@
 
 }
 
+.navbar-header
+{
+    @include breakpoint($allCelular)
+    {   
+        margin-bottom: 15px;
+    }
+}
+
 .nav-principal
 {
-    width: 75%;
+    width: 73%;
     float: left;
     text-align: center;
     margin-top: 8px;
+    //border: 1px solid #ddd;
+    //border-top: 0;
 
     @include breakpoint($allCelular)
     {   
         width: 100%;
         margin: 0;
+        padding: 10px;
+        text-align: left;
     }
 
     li
@@ -88,18 +138,34 @@
             padding: $fontSizeBase ($fontSizeBase/2);
             transition: $transitionAll;
 
-            &:hover,
-            &:focus 
+            @include breakpoint($allCelularPlus1)
+            {   
+                font-size: $fontSizeBase * 1.3;
+            }
+
+            &:focus
             {
                 background-color: transparent;
-                text-transform: uppercase;
-                font-size: $fontSizeBase * 2;
-                font-weight: $fontWeightBold;                
+            }
+
+            @include breakpoint($allDesktop)
+            {             
+                &:hover,
+                &:focus 
+                {
+                    background-color: transparent;
+                    text-transform: uppercase;
+                    font-size: $fontSizeBase * 2;
+                    font-weight: $fontWeightBold;               
+                    @include breakpoint($allCelularPlus1)
+                    {   
+                        font-size: $fontSizeBase * 1.8;
+                    }                 
+                }
             }
         }
 
-        &.active,
-        &:hover
+        &.active
         {
             a 
             {

@@ -145,6 +145,21 @@
 
             </section>
             <!-- end .ss-passos --> 
+
+            <section class="sessao ss-form-contato">
+
+                <div class="container ss-bd-int ss-contato ss-logo-ft">  
+           
+                <div class="ss-container">
+                    <img src="./imgs/setevidas-ft-blk.png" border="0">
+                </div>
+                <!-- end .ss-container -->
+
+                </div>
+                <!-- end .container -->
+
+            </section>
+            <!-- end .ss-passos -->             
          
             <?php //include("./incs/footer.php"); ?>      
 

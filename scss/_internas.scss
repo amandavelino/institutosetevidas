@@ -8,6 +8,16 @@
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;    
 
+    @include breakpoint($allCelularPlus1)
+    {  
+        border-radius: 30px;
+    }
+
+    @include breakpoint($allCelular)
+    {  
+        border-radius: 10px;
+    }
+    
     img 
     {
         max-width: 100%;
@@ -1696,7 +1706,8 @@
     {
         padding-left: 0;
         padding-right: 0;
-        
+        max-width: 90%;
+
         &::before 
         {
             display: none;
@@ -1712,15 +1723,21 @@
         padding: 0;
         overflow: hidden;
         position: relative;
+        max-width: 90%;
     }
 
     .ss-contato 
     {
         background: $primaryColor;
-        background: rgba(255,255,255,.85);
+        background: rgba(255,255,255,.95);
         padding: 60px 50px;
 
-        &::before 
+        @include breakpoint($smallCelular)
+        {   
+            padding: 60px 20px;
+        }  
+
+        &::after 
         {
             background: url("../imgs/pattern-ls-blk.png") repeat;
             display: block;
@@ -1733,6 +1750,16 @@
             opacity: .5;
         }
 
+        &.ss-logo-ft
+        {
+            text-align: center;
+            padding: 20px 0;
+            &::after 
+            {
+                display: none;
+            }
+        }
+
     }    
 
     .legenda-topo
@@ -1741,6 +1768,18 @@
         bottom: 60px;
         left: 60px;
         width: 500px;
+        max-width: 90%;
+
+        @include breakpoint($allCelular)
+        {   
+            bottom: 20px;
+            left: 20px;
+        }   
+
+        @include breakpoint($smallerCelular)
+        {   
+            display: none;
+        }           
 
         h2 
         {
@@ -1751,6 +1790,22 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             margin: 0;
+
+            @include breakpoint(0 $largeDesktop)
+            {   
+                font-size: $fontSizeBase * 2.5;
+            }  
+            
+            @include breakpoint($allCelularPlus1)
+            {   
+                font-size: $fontSizeBase * 2;
+            } 
+            
+            @include breakpoint($allCelular)
+            {   
+                font-size: $fontSizeBase * 1.6;
+            }             
+
         }
 
     }
@@ -1770,6 +1825,16 @@
             padding: 0 0 3%;
             overflow: hidden;
             margin: 0 -1px 3%;
+
+            @include breakpoint($allCelularPlus1)
+            {   
+                width: 100%;
+            }
+
+            @include breakpoint($smallCelular)
+            {   
+                text-align: center;
+            }  
 
             .passos-conteudo
             {
@@ -1806,6 +1871,13 @@
                 overflow: hidden;
                 position: relative;
                 margin-right: 20px;
+
+                @include breakpoint($smallCelular)
+                {   
+                    float: none;
+                    margin: 0 auto 20px;
+                }  
+
             }
 
             .num 
@@ -1839,14 +1911,22 @@
                 margin: 0;
                 padding: 0;
                 text-transform: uppercase;
+                @include breakpoint($allCelularPlus1)
+                {   
+                    font-size: $fontSizeBase * 2.3;
+                }                
             }
 
             p 
             {
                 color: $colorH4Passos;
-                font-size: $fontSizeBase * 1.2;
-                font-weight: $fontWeightMedium;
+                font-size: $fontSizeBase * 1.4;
+                font-weight: $fontWeightNormal;
                 line-height: 1.3em;
+                @include breakpoint($allCelularPlus1)
+                {   
+                    font-size: $fontSizeBase * 1.3;
+                }                   
             }
 
         }
@@ -1868,6 +1948,8 @@
         .ss-container
         {
             padding: 0;
+            max-width: 100%;
+            z-index: 10;
         }
 
         .hd-w-legenda 
@@ -1891,11 +1973,31 @@
         margin-top: 30px;
         text-align: center;
 
+        @include breakpoint($allCelularPlus1)
+        {
+            &:nth-child(2)
+            {
+                margin-top: 0;
+            }
+        }
+
+        @include breakpoint($smallCelular)
+        {
+            padding: 0 5%;
+        }        
+
         label
         {
             width: 50%;
             float: left;
             margin: 0;
+
+            @include breakpoint($allCelularPlus1)
+            {   
+                width: 100%;
+                overflow: hidden;
+                margin-bottom: 10px;
+            }   
 
             .input 
             {
@@ -1911,6 +2013,12 @@
                 outline: none;
                 text-transform: uppercase;
                 width: 110%;
+
+                @include breakpoint($allCelularPlus1)
+                {   
+                    width: 100%;
+                } 
+
             }
 
             .inputBg1

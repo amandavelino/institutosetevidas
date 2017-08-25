@@ -72,8 +72,21 @@ p
 
     .navbar-collapse
     {
-        margin-top: 20px;
-        //background-color: $colorDestaque;
+        @include breakpoint(0 $largeDesktop)
+        {   
+            margin-top: 5px;
+        }          
+    }
+}
+
+.pg-contato
+{
+    .navbar-toggle
+    {
+        @include breakpoint($allCelular)
+        {
+            background-color: $colorDestaque;
+        }
     }
 }
 
@@ -86,6 +99,16 @@ p
     margin: 30px auto 0;  
     overflow: hidden; 
     position: relative; 
+
+    @include breakpoint($allCelularPlus1)
+    {  
+        border-radius: 30px;
+    }
+
+    @include breakpoint($allCelular)
+    {  
+        border-radius: 10px;
+    }
 }
 
 .ss-container 
