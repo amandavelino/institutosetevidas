@@ -26,6 +26,17 @@
         h2 
         {
             font-size: $fontSizeBase * 2.5;
+
+            @include breakpoint($allCelularPlus1)
+            {
+                font-size: $fontSizeBase * 2;
+            }
+
+            @include breakpoint($smallCelular)
+            {
+                font-size: $fontSizeBase * 1.6;
+            }  
+
         }
 
     }  
@@ -35,17 +46,29 @@
         p 
         {
             font-size: $fontSizeBase * 1.6;
+
+            @include breakpoint($allCelularPlus1)
+            {
+                font-size: $fontSizeBase * 1.4;
+            }
+
         }
     }  
     
     .ss-container-pd 
     {
         padding: 180px 40px;
-        width: auto;   
+        width: auto;
+        
         @include breakpoint($smallDesktop)
         {   
             padding: 100px 0;
         } 
+
+        @include breakpoint(0 $allCelularPlus1)
+        {   
+            padding: 40px 0;
+        }         
 
     }
 
@@ -65,6 +88,22 @@
         h2 
         {
             font-size: $fontSizeBase * 3;
+
+            @include breakpoint(0 $largeDesktop)
+            {
+                font-size: $fontSizeBase * 2.5;
+            }            
+
+            @include breakpoint($allCelularPlus1)
+            {   
+                font-size: $fontSizeBase * 2;
+            }  
+
+            @include breakpoint($smallCelular)
+            {
+                font-size: $fontSizeBase * 1.7;
+            }  
+
         }
 
     }   
@@ -74,10 +113,37 @@
         width: 530px;
         max-width: 100%;
 
+        @include breakpoint(0 $largeDesktop)
+        {
+            width: 45%;
+        }
+
+        @include breakpoint($smallCelular)
+        {
+            width: 100%;
+        }
+
         p
         {
             font-size: $fontSizeBase * 2.5;
             font-weight: $fontWeightLight;
+
+            @include breakpoint(0 $largeDesktop)
+            {
+                font-size: $fontSizeBase * 1.8;
+            }
+
+            @include breakpoint($allCelularPlus1)
+            {
+                font-size: $fontSizeBase * 1.5;
+                font-weight: $fontWeightNormal;
+            }
+
+            @include breakpoint($smallCelular)
+            {
+                font-size: $fontSizeBase * 1.4;
+            }            
+
         }
     }
 }
@@ -114,8 +180,8 @@
         &::after 
         {
             right: initial;
-            left: 50%;
-            margin-left: -25px;
+            left: 0;
+            margin-left: 0;
             margin-right: 0;
         }
 
@@ -134,21 +200,37 @@
     .ss-somos-missao
     {
         background-image: url("../imgs/quem-somos-missao.jpg"); 
+        background-position: top right;
     }
 
     .ss-somos-visao 
     {
         background-image: url("../imgs/quem-somos-visao.jpg"); 
+        background-position: top left;
     }
 
     .ss-somos-valores 
     {
         background-image: url("../imgs/quem-somos-valores.jpg"); 
+        background-position: top right;
     }   
     
     .ss-somos-equipe 
     {
-        background-image: url("../imgs/quem-somos-equipe.jpg"); 
+        background-image: none;
+        position: relative;
+        &::after 
+        {
+            background: url("../imgs/pattern-ls-blk.png") repeat 0 0;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            opacity: 1;
+        }
     }       
 
     .lista-membros
@@ -158,6 +240,12 @@
         overflow: initial;
         width: 100%;
 
+        @include breakpoint(0 $largeDesktop)
+        {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
         li 
         {
             float: left;
@@ -165,7 +253,18 @@
             position: relative;
             margin: 0;
             margin-bottom: -40px;
-            z-index: 20;            
+            z-index: 20;     
+            
+            @include breakpoint(0 $largeDesktop)
+            {   
+                margin-bottom: -20px;
+            }       
+            
+            @include breakpoint(0 $allCelularPlus1)
+            {
+                margin-bottom: 20px;
+            }            
+
         }
 
         figure 
@@ -176,6 +275,18 @@
             overflow: hidden;
             width: 320px;
             height: 320px;
+
+            @include breakpoint(0 $largeDesktop)
+            {   
+                width: 200px;
+                height: 200px; 
+            } 
+
+            @include breakpoint($allCelularPlus1)
+            {
+                margin: 0 auto;
+            }
+
         }
 
         header 
@@ -183,6 +294,12 @@
             text-align: left;
             margin-bottom: 20px;
             padding: 0;
+
+            @include breakpoint($allCelularPlus1)
+            {   
+                margin-bottom: 10px;
+                text-align: center;
+            } 
 
             &::after 
             {
@@ -202,6 +319,17 @@
                 
                 font-size: $fontSizeBase * 2.8;
                 font-weight: $fontWeightNormal;
+
+                @include breakpoint(0 $largeDesktop)
+                {   
+                    font-size: $fontSizeBase * 2;
+                } 
+
+                @include breakpoint($allCelularPlus1)
+                {
+                    font-size: $fontSizeBase * 1.5;
+                }
+
             }
 
             h4 
@@ -209,6 +337,17 @@
                 font-size: $fontSizeBase * 1.6;
                 font-weight: $fontWeightSemiBold;
                 padding-top: 5px;
+
+                @include breakpoint(0 $largeDesktop)
+                {   
+                    font-size: $fontSizeBase * 1.3;
+                } 
+
+                @include breakpoint($allCelularPlus1)
+                {
+                    padding: 0;
+                }
+
             }
         }
 
@@ -227,11 +366,52 @@
             left: 160px;
             height: 290px;
 
+            @include breakpoint(0 $largeDesktop)
+            {   
+                height: 190px;
+                margin: 0;
+                padding: 15px 50px 15px 70px;
+                border-top-right-radius: 90px;
+                border-bottom-right-radius: 90px;
+                width: 65%;
+                top: 5px;
+                left: 140px;
+            } 
+
+            @include breakpoint($allCelularPlus1)
+            {   
+                border-radius: 90px;
+                height: auto;
+                width: 100%;
+                margin: -40px 0 0;
+                padding: 30px 50px;
+                position: relative;
+                left: 0;
+            } 
+
+            @include breakpoint($smallCelular)
+            {   
+                border-radius: 30px;
+            }             
+
             p 
             {
                 font-size: $fontSizeBase * 2;
                 line-height: 1.2em;
                 margin: 0;
+
+                @include breakpoint(0 $largeDesktop)
+                {   
+                    font-size: $fontSizeBase * 1.4;
+                } 
+                
+                @include breakpoint($allCelularPlus1)
+                {   
+                    font-size: $fontSizeBase * 1.2;
+                    line-height: 1.2em;
+                    text-align: center;
+                } 
+
             }        
 
         }
@@ -245,6 +425,10 @@
             figure 
             {
                 float: right;
+                @include breakpoint(0 $allCelularPlus1)
+                {
+                    float: none;
+                }
             }
 
             .txt-membro
@@ -257,6 +441,29 @@
                 right: 160px;
                 left: initial;
                 width: 700px;
+
+                @include breakpoint(0 $largeDesktop)
+                {   
+                    width: 65%;
+                    right: 140px;
+                    padding: 15px 50px;
+                    border-top-left-radius: 90px;
+                    border-bottom-left-radius: 90px;
+                } 
+
+                @include breakpoint(0 $allCelularPlus1)
+                { 
+                    width: 100%;
+                    right: 0;
+                    padding: 30px 50px;
+                    border-radius: 90px;                
+                }
+
+                @include breakpoint($smallCelular)
+                {   
+                    border-radius: 30px;
+                }                  
+
             }    
 
         }
@@ -1533,7 +1740,7 @@
         {
             h2 
             {
-                font-size: $fontSizeBase * 2.2
+                font-size: $fontSizeBase * 2.2;
             }
         }
     }

@@ -141,6 +141,11 @@ p
                 margin-right: -25px;
             } 
 
+            @include breakpoint($smallCelular)
+            {
+                width: 30px;
+            }  
+
         }
 
         h2 
@@ -419,13 +424,16 @@ p
         @include breakpoint($allCelularPlus1)
         {   
             padding: 0 10%;  
+            font-size: $fontSizeBase * 2.5;
+            letter-spacing: 5px;
         }      
         
         @include breakpoint($smallCelular)
         {
-            font-size: $fontSizeBase * 2.4;
+            font-size: $fontSizeBase * 1.8;
             font-weight: $fontWeightNormal;
             padding: 0;
+            letter-spacing: 2px;
         }
 
     }
