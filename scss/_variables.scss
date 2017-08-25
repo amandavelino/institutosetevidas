@@ -97,6 +97,8 @@ $transitionBg: background-color .5s ease-in-out;
     $tablet: 768px 991px; //tablets portrait: 
 
     //Celular
+    $allCelularPlus1: 0 768px;
     $allCelular: 0 767px; // todos os dispositivos móveis < 768px
     $largeCelular: 481 767px;
     $smallCelular: 0 480px; 
+    $smallerCelular: 0 420px;

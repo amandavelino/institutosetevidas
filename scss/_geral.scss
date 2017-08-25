@@ -51,12 +51,38 @@ p
     line-height: 1.5em;
 }
 
+//Menu Mobile
+.navbar-default
+{
+    .navbar-toggle
+    {
+        border-color: $primaryColor;
+
+        &:hover,
+        &:focus 
+        {
+            background-color: $colorDestaque;
+        }
+
+        .icon-bar
+        {
+            background-color: $primaryColor;
+        }
+    }
+
+    .navbar-collapse
+    {
+        margin-top: 20px;
+        //background-color: $colorDestaque;
+    }
+}
+
 .ss-wrapper 
 {
     border-radius: $radiusPadrao;
     box-shadow: $dropShadow;
     width: 1375px; 
-    max-width: 100%;  
+    max-width: 90%;  
     margin: 30px auto 0;  
     overflow: hidden; 
     position: relative; 
@@ -65,6 +91,7 @@ p
 .ss-container 
 {
     width: $container-md;
+    max-width: 90%;
     margin: 0 auto;
     overflow: hidden;
     padding: 40px 0 50px;
@@ -151,11 +178,23 @@ p
     letter-spacing: 1px;
     transition: $transitionAll5s;
 
+    @include breakpoint($allCelularPlus1)
+    {   
+        font-size: $fontSizeBase * 1.6; 
+        letter-spacing: 0; 
+    } 
+
     &.btn-conheca 
     {
         background: $bgColorBtn;
         box-shadow: $dropShadowLight;
         float: right;
+
+        @include breakpoint($allCelular)
+        {   
+            float: none;
+        } 
+
     }
 
     &.btn-veja
@@ -237,7 +276,7 @@ p
 
         @include breakpoint($smallCelular)
         {   
-            display: block;
+            //display: block;
         } 
         
     }
@@ -338,6 +377,11 @@ p
     margin: 0;
     padding: 40px 0;
 
+    @include breakpoint($smallCelular)
+    {
+        padding: 20px 0;
+    }
+
     li 
     {
         list-style: inside none;
@@ -366,6 +410,24 @@ p
         letter-spacing: 10px;
         padding: 0 25%;
         text-transform: uppercase;
+
+        @include breakpoint(0 $largeDesktop)
+        {   
+            padding: 0 22%;  
+        } 
+        
+        @include breakpoint($allCelularPlus1)
+        {   
+            padding: 0 10%;  
+        }      
+        
+        @include breakpoint($smallCelular)
+        {
+            font-size: $fontSizeBase * 2.4;
+            font-weight: $fontWeightNormal;
+            padding: 0;
+        }
+
     }
 }
 

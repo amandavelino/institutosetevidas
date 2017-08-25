@@ -36,6 +36,26 @@
     .ct-ft
     {
         @include make-lg-column(4);
+        @include make-md-column(4);
+        @include make-sm-column(4);
+        
+        @include breakpoint($tablet)
+        {   
+            width: 100%;
+        }                
+
+        @include breakpoint(0 $allDesktop)
+        {   
+            margin-bottom: 40px;
+        } 
+
+        &:last-child
+        {
+            @include breakpoint(0 $allDesktop)
+            {   
+                margin-bottom: 0;
+            }      
+        }
 
         header 
         {
@@ -111,6 +131,18 @@
                 float: left;
                 width: auto;
                 margin-right: 8px;
+
+                @include breakpoint(0 $largeDesktop)
+                {   
+                    float: none;
+                } 
+
+                @include breakpoint(0 $allDesktop)
+                {   
+                    display: inline-block;
+                    margin-right: 20px;
+                }                  
+                
             }
 
             i 
@@ -124,6 +156,13 @@
                 font-size: $fontSizeBase * 1.6;
                 float: left;
                 margin: 10px 0 0;
+
+                @include breakpoint(0 $allDesktop)
+                {   
+                    display: inline-block;
+                    float: none;
+                }  
+
             }
 
         }
