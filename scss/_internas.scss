@@ -180,7 +180,7 @@
         &::after 
         {
             right: initial;
-            left: 0;
+            left: initial;
             margin-left: 0;
             margin-right: 0;
         }
@@ -482,6 +482,14 @@
         {
             font-size: $fontSizeBase * 2.5;
             font-weight: $fontWeightLight;
+            @include breakpoint($allCelularPlus1)
+            {   
+                font-size: $fontSizeBase * 2;
+            }  
+            @include breakpoint($smallCelular)
+            {   
+                font-size: $fontSizeBase * 1.8;
+            }  
         }
     }
 
@@ -489,6 +497,10 @@
     {
         text-align: center;
         margin-bottom: 80px;
+        @include breakpoint($allCelularPlus1)
+        {   
+           margin-bottom: 40px;
+        }         
         &::after 
         {
             right: initial;
@@ -503,6 +515,15 @@
         h2 
         {
             font-size: $fontSizeBase * 3; 
+            @include breakpoint($allCelularPlus1)
+            {   
+                font-size: $fontSizeBase * 2;
+            }
+            @include breakpoint($smallCelular)
+            {   
+                font-size: $fontSizeBase * 1.7;
+                letter-spacing: 1px;
+            }                            
         }
     }
 
@@ -510,16 +531,26 @@
     {
         padding: 40px;
         padding-bottom: 160px;
+        @include breakpoint($allCelularPlus1)
+        {   
+            padding: 40px 20px 60px;
+        }   
+        @include breakpoint($smallCelular)
+        {   
+            padding: 40px 0;
+        }                  
     }
 
     .ss-ajudar-futuro 
     {
-        background-image: url("../imgs/como-ajudar-futuro.jpg"); 
+        background-image: url("../imgs/como-ajudar-futuro.jpg");
+        background-position: top right; 
     }
 
     .ss-ajudar-apadrinhamento
     {
         background-image: url("../imgs/como-ajudar-apadrinhamento.jpg");
+        background-position: top left;
     }
 
     .ss-ajudar-apadrinhamento,
@@ -529,6 +560,11 @@
         .hd-w-legenda
         {
             margin-bottom: 80px;
+            @include breakpoint($allCelularPlus1)
+            {   
+                margin-bottom: 40px;
+            } 
+
             p 
             {
                 margin: 0;
@@ -543,6 +579,15 @@
         .ss-container-pd
         {
             padding-bottom: 100px;
+            @include breakpoint($allCelularPlus1)
+            {   
+                padding: 40px 20px;
+            }   
+            @include breakpoint($smallCelular)
+            {   
+                padding: 40px 0;
+            }               
+            
         }
 
         .ss-conteudo-interna
@@ -560,6 +605,10 @@
             p 
             {
                 font-size: $fontSizeBase * 2;
+                @include breakpoint($allCelularPlus1)
+                {   
+                    font-size: $fontSizeBase * 1.5;
+                } 
             }
         }
 
@@ -637,7 +686,7 @@
                 cursor: pointer;
                 position: absolute;
                 top: 0;
-                right: 0;
+                right: 1px;
                 width: 20px;
                 height: 20px;
                 opacity: 0;
@@ -682,6 +731,7 @@
             .hgroup
             {
                 padding: 30px 0 0;
+                text-align: left;
             }
 
             h3, h4 
@@ -703,16 +753,25 @@
             h3 
             {
                 font-size: $fontSizeBase * 2;
+                @include breakpoint(0 $largeDesktop)
+                {   
+                    font-size: $fontSizeBase * 1.5;
+                }  
             }
 
             h4 
             {
                 font-size: $fontSizeBase * 1.9;
+                @include breakpoint(0 $largeDesktop)
+                {   
+                    font-size: $fontSizeBase * 1.4;
+                }  
             }
 
             .desc-sonho
             {
                 height: 70px;
+                text-align: left;
             }
 
             p 
@@ -720,7 +779,7 @@
                 color: $secondaryColor;
                 font-size: $fontSizeBase * 1.2;
                 font-weight: $fontWeightMedium;
-                text-align: justify;
+                //text-align: justify;
                 line-height: 1.3em;
             }
 
@@ -736,6 +795,7 @@
         .owl-nav
         {
             width: 450px;
+            max-width: 100%;
             margin: 0 auto;
             position: relative;
             overflow: hidden;
@@ -763,6 +823,7 @@
             position: relative;
             text-align: center;
             width: 400px;
+            max-width: 80%;
             margin: -33px auto 0;
 
             .owl-dot 

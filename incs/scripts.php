@@ -36,7 +36,25 @@
             dots: true,
             navText: ['<i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>','<i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>'],
             loop: false,
-            margin: 20          
+            margin: 20,
+            responsive : {
+                // breakpoint from 0 up
+                0 : {
+                   items: 1
+                },
+                // breakpoint from 550 up
+                550 : {
+                    items: 2
+                },
+                // breakpoint from 768 up
+                768 : {
+                    items: 2
+                },
+                // breakpoint from 992 up
+                992 : {
+                    items: 3
+                }
+            }                     
         });
 
         //numeracao do slider apadrinhe - escolha um sonho

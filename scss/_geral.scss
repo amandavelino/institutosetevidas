@@ -238,6 +238,11 @@ p
         font-size: $fontSizeBase * 2;
         font-weight: $fontWeightMedium;
         padding: 12px 80px;
+        @include breakpoint(0 $largeDesktop)
+        {   
+            font-size: $fontSizeBase * 1.5;
+            padding: 10px 50px;
+        }  
     }
 
     &.btn-apadrinhe
