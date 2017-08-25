@@ -115,7 +115,10 @@
                                         </div>
                                         <!-- end .hd-conteudo -->
 
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                        <div class="desc-sonho">
+                                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                        </div>
+                                        <!-- end .desc-sonho -->
 
                                     </div>
                                     <!-- end .conteudo-lista -->
@@ -151,7 +154,10 @@
                                         </div>
                                         <!-- end .hd-conteudo -->
 
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                        <div class="desc-sonho">
+                                            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                        </div>
+                                        <!-- end .desc-sonho -->
 
                                     </div>
                                     <!-- end .conteudo-lista -->
@@ -192,7 +198,10 @@
                                         </div>
                                         <!-- end .hd-conteudo -->
 
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                        <div class="desc-sonho">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                        </div>
+                                        <!-- end .desc-sonho -->
 
                                     </div>
                                     <!-- end .conteudo-lista -->
@@ -228,7 +237,10 @@
                                         </div>
                                         <!-- end .hd-conteudo -->
 
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                        <div class="desc-sonho">
+                                            <p>Ut enim ad minim veniam, quis nostrud</p>
+                                        </div>
+                                        <!-- end .desc-sonho -->
 
                                     </div>
                                     <!-- end .conteudo-lista -->
@@ -269,7 +281,10 @@
                                         </div>
                                         <!-- end .hd-conteudo -->
 
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                        <div class="desc-sonho">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                        <!-- end .desc-sonho -->
 
                                     </div>
                                     <!-- end .conteudo-lista -->
@@ -305,7 +320,10 @@
                                         </div>
                                         <!-- end .hd-conteudo -->
 
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                        <div class="desc-sonho">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                                        </div>
+                                        <!-- end .desc-sonho -->
 
                                     </div>
                                     <!-- end .conteudo-lista -->
@@ -346,7 +364,10 @@
                                         </div>
                                         <!-- end .hd-conteudo -->
 
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                        <div class="desc-sonho">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                        <!-- end .desc-sonho -->
 
                                     </div>
                                     <!-- end .conteudo-lista -->

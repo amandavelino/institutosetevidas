@@ -34,13 +34,6 @@
                         <li><a href="contato.php">Contato</a></li>
                     </ul>
                     
-                    <?php //se não for contato, aparece o busca no topo ?>
-                    <?php if($pagina != $www . "contato.php"): ?>
-                    <ul class="nav navbar-nav navbar-right icons-hd-ct">
-                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                    </ul>
-                    <?php endif; ?>
-                    
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
