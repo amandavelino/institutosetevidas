@@ -880,6 +880,11 @@
         background-color: $primaryColor;
         padding: 30px 0;
 
+        .container 
+        {
+            max-width: 90%;
+        }
+
         &::after 
         {
             background: url("../imgs/pattern-ls-blk.png") repeat;
@@ -954,10 +959,25 @@
         width: 66%;
         float: left;
 
+        @include breakpoint(0 $largeDesktop)
+        {   
+            width: 60%;  
+        } 
+
+        @include breakpoint($allCelularPlus1)
+        {   
+            width: 100%;
+        } 
+
         .noticia
         {
             margin-bottom: 100px;
             position: relative;
+
+            @include breakpoint(0 $largeDesktop)
+            {   
+                 margin-bottom: 50px; 
+            } 
 
             .hd-noticia
             {
@@ -1003,7 +1023,7 @@
 
             img 
             {
-                max-width: 750px;
+                max-width: 100%;
             }
         }
 
@@ -1016,6 +1036,14 @@
                 font-weight: $fontWeightSemiBold;
                 margin: 0;
                 padding: 0;
+                @include breakpoint(0 $largeDesktop)
+                {   
+                    font-size: $fontSizeBase * 3; 
+                }   
+                @include breakpoint($smallCelular)
+                {   
+                    font-size: $fontSizeBase * 2.2; 
+                }                                 
             }
         }
 
@@ -1029,6 +1057,11 @@
                 font-size: $fontSizeBase * 1.6;
                 font-weight: $fontWeightNormal;
                 margin: 0;
+
+                @include breakpoint($smallCelular)
+                {   
+                    font-size: $fontSizeBase * 1.3; 
+                }                  
             }
 
             time 
@@ -1073,6 +1106,18 @@
     {
         float: right;
         width: 30%;
+        
+        @include breakpoint(0 $largeDesktop)
+        {   
+            width: 35%;  
+        } 
+
+        @include breakpoint($allCelularPlus1)
+        {   
+            width: 100%;
+            margin-top: 40px;
+        } 
+
     }
 
     .noticias,
@@ -1163,6 +1208,7 @@
                 margin-bottom: 20px;
                 padding: 0;
                 padding-bottom: 25px;
+                overflow: hidden;
 
                 header 
                 {
@@ -1222,6 +1268,7 @@
             display: inline-block;
             margin: 0;
             margin-right: 5px;
+            margin-bottom: 5px;
             padding: 0;
             width: auto;
 
@@ -1240,6 +1287,11 @@
                 font-weight: $fontWeightNormal;
                 padding: 8px 15px;
                 transition: $transitionAll5s;
+
+                @include breakpoint($smallCelular)
+                {   
+                    font-size: $fontSizeBase * 1.3; 
+                }  
 
                 &:hover,
                 &:focus,
@@ -1299,6 +1351,10 @@
                 font-size: $fontSizeBase * 1.8;
                 line-height: 2.5em;
                 transition: $transitionAll5s;
+                @include breakpoint($smallCelular)
+                {   
+                    font-size: $fontSizeBase * 1.5; 
+                }                  
             }
 
             i
@@ -1384,6 +1440,7 @@
             box-shadow: none;
             float: left;
             margin-right: 10px;
+            margin-bottom: 0;
 
             &::before,
             &::after 
